@@ -1,0 +1,59 @@
+.modal {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+}
+
+.modal__content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  width: 300px;
+}
+
+.modal-text {
+  margin-top: 0;
+  font-size: 16px;
+  font-weight: normal;
+  white-space: pre-line;
+  box-sizing: border-box;
+  color: gray;
+  text-align: center;
+  line-height: 25px;
+}
+
+.input-coord {
+  width: 100%;
+  box-sizing: border-box;
+  height: 35px;
+  outline: blue;
+}
+
+.btn-control-accept,
+.btn-control-refuse {
+  appearance: none;
+  border: 1px  solid black;
+  background: white;
+  padding: 5px 10px;
+  font: inherit;
+  cursor: pointer;
+  border-radius:  10px;
+  color: gray;
+  height: 100%;
+}
+
+.btn-control-coord {
+  display: flex;
+  gap: 10px;
+  align-self: flex-end;
+}
+
