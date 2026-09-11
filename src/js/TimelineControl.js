@@ -77,7 +77,6 @@ export class TimelineControl {
 
   async startRecording(event) {
     if (event.target.disabled) return;
-    console.log(event.target);
     this.updateDate();
     if (event.target.classList.contains("voice-submit-btn")) {
       await this.Record({ audio: true });
@@ -138,7 +137,6 @@ export class TimelineControl {
       input.reportValidity();
     }
     event.target.querySelector(".input-coord").value = "";
-    console.log(event.target.querySelector(".input-coord").value);
   }
 
   parseCoordinate(text) {
